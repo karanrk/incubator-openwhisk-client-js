@@ -130,6 +130,14 @@ in your options structure, e.g.
 ```javascript
 ow.actions.invoke({ noUserAgent: true, name, params })
 ```
+### Working with a Proxy
+
+If you are working behind a firewall, you could use the following environment variables to proxy your HTTP/HTTPS requests
+
+- *http_proxy/HTTP_PROXY*
+- *https_proxy/HTTPS_proxy*
+
+The openwhisk-client-js SDK supports the use of above mentioned proxies through third-party http agent such as [proxy-agent](https://github.com/TooTallNate/node-proxy-agent "proxy-agent Github page")
 
 ## Examples
 
